@@ -45,7 +45,7 @@ Per configurare il contenitore per i lease condiviso, la sola configurazione agg
 
 Ad esempio, se si dispone di tre trigger: uno che invia messaggi e-mail, uno che esegue un'aggregazione per creare una vista materializzata e uno che invia le modifiche a un'altra risorsa di archiviazione per analisi successive, è possibile assegnare l'attributo `LeaseCollectionPrefix` di "emails" al primo, di "materialized" al secondo e di "analytics" al terzo.
 
-La cosa importante è che tutti e tre i trigger **possona usare la stessa configurazione del contenitore per i lease** (nome account, database e contenitore).
+La cosa importante è che tutti e tre i trigger **possano usare la stessa configurazione del contenitore per i lease** (nome account, database e contenitore).
 
 Un esempio di codice molto semplice che usa l'attributo `LeaseCollectionPrefix` di C#, sarà simile al seguente:
 
